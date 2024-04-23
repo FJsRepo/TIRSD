@@ -2,17 +2,26 @@
 
 ## Introduction
 
-BLDAFT is a new IR small target detection algorithm named Bilateral Local Discrete Attention Fusion Transformer for infrared small targets detection under maritime.
-This open-source code is used for test and verify our paper, or for future comparison.
-![BLDAFT](./fig/Network.png)
+SIRFM is a sea-sky region segmentation guided IR small targets enhancement and detection Fusion Model that takes SSL as the lead to achieve pixel-level sea and sky region segmentation and thus realize targeted IR small target enhancement and detection.
+This open-source code is used to test and verify our paper, or for future comparison.
+![SIRFM](./fig/Network.png)
 
 
 ## License
 
 This project is released under the [Apache 2.0 license](./LICENSE).
 
+## Dataset
+
+The labeled MAR-DCT dataset is already in SIRFM/SIRFM/MAR-DCT. You can generate it by yourself using  MAR-DCT-Enhanced-generate/ImgEnhance/main.py. ( Need to download the trained SSLDetection model for the MAR-DCT dataset first).
+
+We also provide the original MAR-DCT dataset without enhancement, refer to SIRFM/MAR-DCT-Enhanced-generate/MAR-DCT-Original.
+
 ## Installation
-Refer to Deformable detr [here](https://github.com/fundamentalvision/Deformable-DETR)
+
+Refer to InfML-HDD [here](https://github.com/FJsRepo/InfML-HDD) for the image enhance part.
+
+Refer to Deformable detr [here](https://github.com/fundamentalvision/Deformable-DETR) for the target detection part.
 
 ### Requirements
 
@@ -65,18 +74,16 @@ code_root/
         	├── instances_train2017.json
         	└── instances_val2017.json
 ```
+### Steps Before Training
+
+Download SSLDetection model [here](https://pytorch.org/)) to MAR-DCT-Enhanced-generate/ImgEnhance/experiments/SSLDetection/models.
+
+Using MAR-DCT-Enhanced-generate/main.py to generate the enhanced images. (The enhanced images of the MAR-DCT dataset are already in SIRFM.)
 
 ### Training
 
-Refer to Deformable detr [here](https://github.com/fundamentalvision/Deformable-DETR)
+SIRFM/train.py
 
 ### Test
 
-We have provided some test images and run ./util/BLDAFT_Visualize.py with the settings below to test the trained model.
-```
---eval
---coco_path
-../MTD_test
---resume
-../experiments/test.pth
-```
+Download the trained model [here](https://pytorch.org/)) to SIRFM/experiments and ten run eval.py.
