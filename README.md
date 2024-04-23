@@ -13,10 +13,16 @@ This project is released under the [Apache 2.0 license](./LICENSE).
 
 ## Dataset
 
-The labeled MAR-DCT dataset is already in SIRFM/SIRFM/MAR-DCT. You can generate it by yourself using  MAR-DCT-Enhanced-generate/ImgEnhance/main.py. ( Need to download the trained SSLDetection model for the MAR-DCT dataset first).
+The labeled MAR-DCT dataset is already in SIRFM/SIRFM/MAR-DCT. You can generate it by yourself using  
+```bash
+MAR-DCT-Enhanced-generate/ImgEnhance/main.py
+```
+( Need to download the trained SSLDetection model for the MAR-DCT dataset first).
 
-We also provide the original MAR-DCT dataset without enhancement, refer to SIRFM/MAR-DCT-Enhanced-generate/MAR-DCT-Original.
-
+We also provide the original MAR-DCT dataset without enhancement, refer to 
+```bash
+SIRFM/MAR-DCT-Enhanced-generate/MAR-DCT-Original
+```
 ## Installation
 
 Refer to InfML-HDD [here](https://github.com/FJsRepo/InfML-HDD) for the image enhance part.
@@ -76,9 +82,15 @@ code_root/
 ```
 ### Steps Before Training
 
-Download SSLDetection model [here](https://pytorch.org/)) to MAR-DCT-Enhanced-generate/ImgEnhance/experiments/SSLDetection/models.
-
-Using MAR-DCT-Enhanced-generate/main.py to generate the enhanced images. (The enhanced images of the MAR-DCT dataset are already in SIRFM.)
+Download SSLDetection model [here](https://pytorch.org/)) to 
+```bash
+MAR-DCT-Enhanced-generate/ImgEnhance/experiments/SSLDetection/models
+```
+Using 
+```bash
+MAR-DCT-Enhanced-generate/main.py
+```
+to generate the enhanced images. (The enhanced images of the MAR-DCT dataset are already in SIRFM.)
 
 ### Training
 
