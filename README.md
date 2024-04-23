@@ -32,11 +32,11 @@ SIRFM/MAR-DCT-Enhanced-generate/MAR-DCT-Original
 
     We recommend you to use Anaconda to create a conda environment:
     ```bash
-    conda create -n deformable_detr python=3.7 pip
+    conda create -n projectName python=3.7 pip
     ```
     Then, activate the environment:
     ```bash
-    conda activate deformable_detr
+    conda activate projectName
     ```
   
 * PyTorch>=1.5.1, torchvision>=0.6.1 (following instructions [here](https://pytorch.org/))
@@ -63,17 +63,14 @@ python test.py
 
 ### Dataset preparation
 
-About the dataset's structure please refer to [COCO 2017 dataset](https://cocodataset.org/) and organize them as following:
-(Replace coco name with your own dataset.)
+About the dataset's structure please refer to [COCO 2017 dataset](https://cocodataset.org/) and organize them as follows:
 ```
-code_root/
-└── data/
-    └── coco/
-        ├── train2017/
-        ├── val2017/
+    data/
+        ├── train/
+        ├── val/
         └── annotations/
-        	├── instances_train2017.json
-        	└── instances_val2017.json
+        	├── instances_train.json
+        	└── instances_val.json
 ```
 ### Steps Before Training
 
