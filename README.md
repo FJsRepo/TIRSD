@@ -17,7 +17,7 @@ The labeled MAR-DCT dataset is already in SIRFM/SIRFM/MAR-DCT. You can generate 
 ```bash
 SIRFM/MAR-DCT-Enhanced-generate/ImgEnhance/main.py
 ```
-( Need to download the trained SSLDetection model for the MAR-DCT dataset first).
+( Need to download the trained SSLDetection model [here](https://drive.google.com/file/d/10jKEb8eP5HbcRa8Q35LIO3TIwYor6N8O/view?usp=sharing) for the MAR-DCT dataset first).
 
 We also provide the original MAR-DCT dataset without enhancement, refer to 
 ```bash
@@ -82,7 +82,7 @@ code_root/
 ```
 ### Steps Before Training
 
-Download SSLDetection model [here](https://pytorch.org/) to 
+Download SSLDetection model [here](https://drive.google.com/file/d/10jKEb8eP5HbcRa8Q35LIO3TIwYor6N8O/view?usp=sharing) to 
 ```bash
 MAR-DCT-Enhanced-generate/ImgEnhance/experiments/SSLDetection/models
 ```
@@ -98,4 +98,4 @@ SIRFM/SIRFM/train.py
 
 ### Test
 
-Download the trained model [here](https://pytorch.org/) to SIRFM/experiments and ten run eval.py.
+Download the trained model [here](https://drive.google.com/file/d/1XA-mUlGziADWLzUMgELxeVQUaChzEQSz/view?usp=sharing) to SIRFM/experiments and ten run eval.py.
