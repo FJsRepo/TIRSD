@@ -82,7 +82,7 @@ code_root/
 ```
 ### Steps Before Training
 
-Download SSLDetection model [here](https://pytorch.org/)) to 
+Download SSLDetection model [here](https://pytorch.org/) to 
 ```bash
 MAR-DCT-Enhanced-generate/ImgEnhance/experiments/SSLDetection/models
 ```
@@ -98,4 +98,4 @@ SIRFM/SIRFM/train.py
 
 ### Test
 
-Download the trained model [here](https://pytorch.org/)) to SIRFM/experiments and ten run eval.py.
+Download the trained model [here](https://pytorch.org/) to SIRFM/experiments and ten run eval.py.
