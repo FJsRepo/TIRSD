@@ -23,11 +23,6 @@ We also provide the original MAR-DCT dataset without enhancement, refer to
 ```bash
 SIRFM/MAR-DCT-Enhanced-generate/MAR-DCT-Original
 ```
-## Installation
-
-Refer to InfML-HDD [here](https://github.com/FJsRepo/InfML-HDD) for the image enhance part.
-
-Refer to Deformable detr [here](https://github.com/fundamentalvision/Deformable-DETR) for the target detection part.
 
 ### Requirements
 
