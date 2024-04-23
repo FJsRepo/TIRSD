@@ -15,7 +15,7 @@ This project is released under the [Apache 2.0 license](./LICENSE).
 
 The labeled MAR-DCT dataset is already in SIRFM/SIRFM/MAR-DCT. You can generate it by yourself using  
 ```bash
-MAR-DCT-Enhanced-generate/ImgEnhance/main.py
+SIRFM/MAR-DCT-Enhanced-generate/ImgEnhance/main.py
 ```
 ( Need to download the trained SSLDetection model for the MAR-DCT dataset first).
 
@@ -88,13 +88,13 @@ MAR-DCT-Enhanced-generate/ImgEnhance/experiments/SSLDetection/models
 ```
 Using 
 ```bash
-MAR-DCT-Enhanced-generate/main.py
+SIRFM/MAR-DCT-Enhanced-generate/main.py
 ```
 to generate the enhanced images. (The enhanced images of the MAR-DCT dataset are already in SIRFM.)
 
 ### Training
 
-SIRFM/train.py
+SIRFM/SIRFM/train.py
 
 ### Test
 
