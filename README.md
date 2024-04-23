@@ -1,10 +1,10 @@
-# BLDAFT
+# SIRFM
 
 ## Introduction
 
 BLDAFT is a new IR small target detection algorithm named Bilateral Local Discrete Attention Fusion Transformer for infrared small targets detection under maritime.
 This open-source code is used for test and verify our paper, or for future comparison.
-![BLDAFT](./figs/BLDAFT.png)
+![BLDAFT](./fig/Network.png)
 
 
 ## License
