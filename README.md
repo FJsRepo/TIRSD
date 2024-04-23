@@ -69,8 +69,8 @@ About the dataset's structure please refer to [COCO 2017 dataset](https://cocoda
         ├── train/
         ├── val/
         └── annotations/
-        	├── instances_train.json
-        	└── instances_val.json
+        	├── train.json
+        	└── val.json
 ```
 ### Steps Before Training
 
